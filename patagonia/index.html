@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Patagonia Home</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+                <a href="#" class="logo">Home</a>
+                <div class="other-links">
+                  <div class="topnav" id="myTopnav">
+                    <a href="#">Works</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contacts</a>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+            <script>
+              function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav";
+                }
+              }
+            </script>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="info">
+                <h1 class="info__title">Patagonia</h1>
+                <p class="info__text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. <br> 
+                    Donec viverra eleifend lacus, vitae ullamcor.</p>
+                <picture class="image">
+                    <source media="(max-width: 768px)" srcset="images/horses-medium.jpg">
+                    <source media="(max-width: 320px" srcset="images/hourses-small.jpg">    
+                    <img src="images/horses-large.jpg" alt="Horse Image">
+                </picture>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

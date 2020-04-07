@@ -1,0 +1,32 @@
+$main-font: 'Roboto', sans-serif;
+
+@import 'colors'; 
+@import 'sidebar'; 
+@import 'top'; 
+@import 'about'; 
+@import 'experience'; 
+@import 'projects'; 
+@import 'contact'; 
+@import 'footer'; 
+
+//notes of things to fix: 
+//hover overlay with opacity color over images
+
+body {
+    margin: 0;
+    font-family: $main-font;
+}
+
+.main {
+    width: 75%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    float: right;
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+}
+
+
+  
